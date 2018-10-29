@@ -1,0 +1,40 @@
+.navbar {
+    box-shadow: 0 3px 1px rgba(0, 0, 0, 0.40), 0 2px 9px rgba(0, 0, 0, 0.40);
+    background-color: #424242;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+
+    &.navbar-dark .navbar-toggler {
+        border-color: #fbf7f7;
+    }
+
+    .mat-button {
+        color: #fbf7f7;
+    }
+
+    .navbar-brand {
+        img {
+            width: 150px;
+            @media (min-width: 768px){
+                width: 200px;
+            }
+            margin-top: -5px;
+        }
+    }
+
+    .navbar-collapse {
+        flex-direction: row-reverse;
+
+        .navbar-nav {
+
+            .nav-item {
+                margin: 5px 0;
+                @media (min-width: 992px){
+                    margin: 0 10px;
+                }
+            }
+        }
+    }
+}
