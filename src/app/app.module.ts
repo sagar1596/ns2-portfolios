@@ -1,9 +1,11 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 //Material Design
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatButtonModule, MatIconModule, MatCardModule } from '@angular/material';
+import { MatButtonModule, MatIconModule, MatCardModule, MatFormFieldModule, MatInputModule,
+MatProgressSpinnerModule } from '@angular/material';
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -33,7 +35,11 @@ import { CardComponent } from './card/card.component';
     BrowserAnimationsModule,
     MatButtonModule,
     MatIconModule,
-    MatCardModule
+    MatCardModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatProgressSpinnerModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
